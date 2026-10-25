@@ -20,4 +20,5 @@ COPY . .
 
 ENV PATH="/home/userbot/bin:$PATH"
 
-CMD ["python3","-m","userbot"]
+CMD bash -c "python3 -m http.server 8080 & python3 -m userbot"
+
